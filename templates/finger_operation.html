@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<script type="text/javascript", src="{{ url_for('static', filename='js/timer.js')}}"></script>
+	<script type="text/javascript", src="{{ url_for('static', filename='js/scorer.js')}}"></script>
+
+	<style>
+		.question{
+			position: absolute;
+			left: 21%;
+			font-size: 200%;
+			font-weight: 10;
+			font-family: 'Chewy', cursive;
+			/*text-shadow: 2px 2px #FFFFFF;*/
+		}
+		.timer{
+			position: absolute;
+			left: 46%;
+			font-size: 200%;
+			font-weight: 10;
+			font-family: 'Chewy', cursive;
+		}
+		.scorer{
+			position: absolute;
+			left: 69%;
+			font-size: 200%;
+			font-weight: 10;
+			font-family: 'Chewy', cursive;
+		}
+	</style>
+
+	<body>
+		<div style="text-align: center">
+			{% if mode==1 %}
+				<h2 class="question"> What is {{ num1 }} + {{ num2 }}?</h2>
+			{% elif mode==2 %}
+				<h2 class="question"> What is {{ num1 }} - {{ num2 }}?</h2>
+			{% elif mode==3 %}
+				<h2 class="question"> What is {{ num1 }} * {{ num2 }}?</h2>
+			{% elif mode==4 %}
+				<h2 class="question"> What is {{ num1 }} / {{ num2 }}?</h2>
+			{% endif %}
+			<h2 class="timer"> <span id="timer">READY?!!</span> </h2>
+			<h2 class="scorer"> <span id="scorer">0</span> </h2>
+		</div>
+	</body>
+
+</html>

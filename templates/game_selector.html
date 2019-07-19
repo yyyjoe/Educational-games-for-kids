@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class = "animated Bounce">
+	<title>Games!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+	<link href="{{ url_for('static',filename='css/animate.css') }}" rel="stylesheet"/>
+	<link href="{{ url_for('static',filename='css/waypoints.css') }}" rel="stylesheet"/> 
+
+	<script src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}" type="text/javascript"></script>
+	<script src="{{ url_for('static', filename='js/waypoints.js') }}" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<head></head>
+	<body>
+		<section class="intro">
+			<main id = "swup" class = "intro">
+				<div class="inner">
+					<div class="content">
+						<section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s">
+							<h1 id="settings">Games!</h1>
+						</section>
+						<section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".2s">
+							<form class = "Name">
+								<div class = "form-group">
+									<input type="devicetype" class="form-control" id="name" placeholder="Name">  
+								</div>
+							</form>
+
+							<div class="zoom">
+								<a href = "{{ url_for('main_page') }}">
+									<img src = "{{ url_for('static',filename='img/speech2Text.png') }}"  alt = "Video feed Game" class = "SpeechtoText os-animation " data-os-animation="bounceInLeft" data-os-animation-delay=".5s" >
+								</a>
+							</div>
+
+							<div class="zoom">
+								<a href = "{{ url_for('finger_game') }}">
+									<img onclick  src = "{{ url_for('static',filename='img/rh.png') }}" alt = "Video feed feature" class = "HMF os-animation" data-os-animation="bounceInRight" data-os-animation-delay=".5s" >
+								</a>
+							</div>
+						</section>
+
+
+						<a href = "{{ url_for('main_page') }}" class="home os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".5s">
+							Home
+						</a>  
+
+					</div>
+				</div>
+			</main>
+		</section>
+	</body>
+
+	<footer></footer>
+</html>

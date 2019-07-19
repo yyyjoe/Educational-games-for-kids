@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+@import url("https://fonts.googleapis.com/css?family=Chewy:400");
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+    background: #6ea6ff;
+}
+
+.intro{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+    background: #6ea6ff;
+	display: table;
+	top: 0;
+}
+
+.intro .inner{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.content{
+	 max-width: 600px;
+	 margin: 0 auto;
+	 text-align: center;
+	 padding-bottom: 75%;
+
+}
+
+.content h1{
+	font-size: 600%;
+	font-weight: 10;
+/*	font-family: 'Monstserrat', arial;*/
+    font-family: 'Chewy', cursive;
+	text-shadow: 6px 6px #ffffff;
+}
+
+.btn{
+	color: black;
+/*	font-family: 'Montserrat', arial;*/
+    font-family: 'Chewy', cursive;
+	font-weight: 400;
+	font-size: 200%;
+	text-decoration: none;
+	border: solid black;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+
+.input{
+	width: 30%;
+	height: 20px;
+}
+
+.SpeechtoText{
+    position:absolute;
+    left:0%;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    margin:10px;
+
+}
+
+.HMF{
+    
+    position:absolute;
+    right:0%;
+    width:200px;
+    height:200px;
+	border-radius:50%;
+    margin:10px;
+}
+
+.zoom:hover{
+transform:scale(1.5);
+}
+
+.Name{
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+#name {
+    height: 70px;
+}
+
+.Name input{
+    font-size: 60px;
+    font-family: Yantramanav;
+}
+
+.about-center{
+    margin: auto;
+   	font-family: 'Monstserrat', arial;
+}
+
+.home{
+    position:absolute;  
+    top:2%;
+    left:2%;
+    color: black;
+    font-family: 'Chewy', cursive;
+	font-weight: 400;
+	font-size: 100%;
+	text-decoration: none;
+	border: solid black;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border-radius: 10px;
+    
+}
+
+.finger_game_options{
+    position:absolute;  
+    color: black;
+    font-family: 'Chewy', cursive;
+	font-weight: 400;
+	font-size: 100%;
+	text-decoration: none;
+	border: solid black;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+
+.finger_game_button{
+	height: 50px;
+	width: 100px;
+}
+
+.finger_game_back{
+    bottom:10%;
+    left:3%;
+}
+
+.finger_game_add{
+	
+    top:20%;
+    left:1.5%;
+}
+
+.finger_game_sub{
+    top:30%;
+    left:1.5%;
+}
+
+.finger_game_mul{
+    top:40%;
+    left:1.5%;
+}
+
+.finger_game_div{
+    top:50%;
+    left:1.5%;
+}
+
+.finger_game_add{
+    top:20%;
+    left:1.5%;
+}
+
+.about{
+    position:absolute;  
+    top:0%;
+    left:90%;
+    color: black;
+    font-family: 'Chewy', cursive;
+	font-weight: 400;
+	font-size: 100%;
+	text-decoration: none;
+	border: solid black;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+
+.team{
+	position: absolute;
+	display:inline;
+	left: 0; 
+	width: 100%;
+	text-align: center;
+}
+
+.game_feed {
+	position: absolute;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	top: 23%;
+	left: 10%;
+	width: 75%;
+}
+
+
+/*--- Media Queries --*/
+@media screen and (max-width: 900px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 480px) {
+	
+}

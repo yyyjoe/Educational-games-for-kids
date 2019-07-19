@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+
+	<head>
+		<title>Finger Counting</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<div style="text-align: center; font-size: 130%; font-weight: 10; font-family: 'Chewy', cursive; text-shadow: 6px 6px #ffffff">
+			<h1>Finger Counting</h1>
+		</div>
+
+		<input type="button" value="add"  class="finger_game_options finger_game_add finger_game_button" onclick="finger_add()"/>
+		<input type="button" value="subtract"  class="finger_game_options finger_game_sub finger_game_button" onclick="finger_sub()"/>
+		<input type="button" value="multiply"  class="finger_game_options finger_game_mul finger_game_button" onclick="finger_mul()"/>
+		<input type="button" value="divide"  class="finger_game_options finger_game_div finger_game_button" onclick="finger_div()"/>
+
+		<p id="display">{{ temp }}</p>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript", src="{{ url_for('static', filename='js/operations.js') }}"></script>
+
+		<h2 style="position: absolute; left: 12%; font-size: 200%; font-weight: 10; font-family: 'Chewy', cursive">
+			Question:
+		</h2>
+
+		<h2 style="position: absolute; left: 40%; font-size: 200%; font-weight: 10; font-family: 'Chewy', cursive">
+			Timer:
+		</h2>
+
+		<h2 style="position: absolute; left: 63%; font-size: 200%; font-weight: 10; font-family: 'Chewy', cursive">
+			Score:
+		</h2>
+
+
+
+		<a href = "{{ url_for('game_selector') }}" class="finger_game_options finger_game_back">
+			Back
+		</a>
+
+		<div>
+			<img id="video" src="{{ url_for('video_feed', width=400, height=300) }}" class="game_feed">
+		</div>
+
+	</body>
+</html>
+
