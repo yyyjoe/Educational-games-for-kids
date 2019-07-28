@@ -1,4 +1,4 @@
-# Inspire
+# Educational math games for kids
 
 ## Introduction
 The preferred way of counting and basic arithmetic of young child between the ages of 3-6 is with their fingers. It is a primitive but proven way for young children to establish their fundamentals in math. There is a very limited selection of tools that facilitate learning by way of finger counting, and none of them are online.
@@ -16,6 +16,10 @@ Key Requirements: Python 3+, Keras 2+, TensorFlow 1+, OpenCV 2+.
 
 
 # How to run
+Clone the repository
+```bash
+git clone https://github.com/yyyjoe/Educational-games-for-kids.git
+```
 
 Install required packages:
 ```bash
