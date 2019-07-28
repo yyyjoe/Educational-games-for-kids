@@ -1,4 +1,4 @@
-# Educational math games for kids
+# Educational Math Games for Kids
 
 ## Introduction
 The preferred way of counting and basic arithmetic of young child between the ages of 3-6 is with their fingers. It is a primitive but proven way for young children to establish their fundamentals in math. There is a very limited selection of tools that facilitate learning by way of finger counting, and none of them are online.
