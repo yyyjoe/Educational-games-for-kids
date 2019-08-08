@@ -119,7 +119,7 @@ class positive_feedback(object):
         output = self.overlay_image(image, self.sg, self.sgMask,
             (self.rightEyeCenter[0] - shiftX, y))
             
-        cv2.putText(output, 'You are a good boy!', (300,600), cv2.FONT_HERSHEY_SIMPLEX, 2.0, (0,255,65), 3, 1)
+        cv2.putText(output, 'You are a good kid!', (300,600), cv2.FONT_HERSHEY_SIMPLEX, 2.0, (0,255,65), 3, 1)
 
 
         _, jpeg = cv2.imencode(".jpg", output)

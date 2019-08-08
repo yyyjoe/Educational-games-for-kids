@@ -12,8 +12,7 @@ Key Requirements: Python 3+, Keras 2+, TensorFlow 1+, OpenCV 2+.
 
 
 # Demo
-![](https://media.giphy.com/media/ViHHvnYtpgskb7YSXH/giphy.gif)
-
+![](https://media.giphy.com/media/f3GURJolX4cbtUzf1G/giphy.gif)
 
 # How to run
 Clone the repository
